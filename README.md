@@ -1,1 +1,0 @@
-# muhammetgumus.github.io
