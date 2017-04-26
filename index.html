@@ -1,55 +1,63 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Welcome!</title>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="asd.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+  
 </head>
-<body background="images/bg52.jpg">
-
-
-<div id="myTopnav" class="topnav" width="100%" height="100%" align="center">
-<a href="index.html"><font size="5" color="red">Home</font></a>&nbsp;&nbsp; 
-<a href="personalinfo.html"><font size="5" color="red">Personal Info</font></a>&nbsp;
-<a href="contact.html"><font size="5" color="red">Contact</font></a>&nbsp; 
-<a href="links.html"><font size="5" color="red">Links</font></a>
-<a href="picturegallery.html"><font size="5" color="red">Picture Gallery</font></a>&nbsp; 
-<a href="registration.html"><font size="5" color="red">Registration Form</font></a>&nbsp; 
-<p align="right"><font color="white" size="4">LOGIN</font><p>
+<body>
+<div class="container-fluid">
+<div class="well">
+<img src="images/mg7.jpg" class="img-circle" alt="image not found" width="100" height="100">
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; On the way to becoming computer engineer...<h1>
 </div>
-<form align="right">
-
-<input type="email" align="right" placeholder="Please enter email" required><br>
-<input type="password" align="right" placeholder="Please enter password" required><br>
-<input type="submit" value="Login">
-
-</form>
-<pre><font size="5" color="white"> 
-            
-	
-	Who Am I?
-	I'm Muhammet Gumus
-	Computer Engineering Student
-	<a href="personalinfo.html">For  more information click me</a>
-	
-	                                                                                                            
-
-
-	
-	
-	
-	
-	
-	
-												    
-													
-													
-												    <font color="white"><strong>Logic will get you from A to B. 
-												    Imagination will take you everywhere. 
-												    Albert Einstein</strong></font>
-	
-	</font></pre>
-
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header m10">
+      <a class="navbar-brand" href="#">Muhammet Gumus</a>
+    </div>
+    <ul class="nav navbar-nav">
+     <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+		<li><a href="personalinfo.html"><span class="glyphicon glyphicon-user"></span> Personal Information</a></li>
+       	<li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+        <li><a href="links.html"><span class="glyphicon glyphicon-link"></span> Links</a></li>
+        <li><a href="picturegallery.html"><span class="glyphicon glyphicon-film"></span> Picture Gallery</a></li>
+		<li><a href="registration.html"><span class="glyphicon glyphicon-edit"></span> Registration Form</a></li>        
+  		
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    
+    <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+        <ul class="dropdown-menu">
+        
+          <li><input type="text" name="email" placeholder="Email" required></li>
+          <li><input type="password" name="password" placeholder="Password" required></li>
+          <li><button type="button" class="btn btn-primary ">Login</button></li>
+					
+        </ul>
+      </li>
+      
+      
+    </ul>
+    </div>
+    
+  
+</nav>
+  
+<div class="jumbotron">
+             <p>
+            <h2> Welcome to My Personal Website !</h2>
+             I'm Muhammet Gümüş. I'm student of the Anadolu University and I'm studying computer engineering. For more information about me please click <a href="personalinfo.html">here</a>
+             </p>
+             
+</div>
+</div>
 </body>
 </html>

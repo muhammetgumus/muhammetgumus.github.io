@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+ p{
+ word-wrap:break-word;
+ display:inline;
+}
+
+body {
+    background: url('images/pi1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+	
+	.well, .jumbotron{
+   background-color: rgba(245, 245, 245, 0.6);
+}
+	
+	h1{
+		display:inline;
+		}
+	m10{
+		
+		margin-top:10px;
+		}

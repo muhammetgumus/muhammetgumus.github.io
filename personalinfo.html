@@ -1,38 +1,86 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Personal Info</title>
+  <title>Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="asd.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  mark {
+    background-color: yellow;
+    color: black;
+}
+a{
+	    text-decoration: none !important;
+
+	}
+
+  </style>  
+
+  
 </head>
-<body background="images/pi2.jpg">
-
-<div id="myTopnav" class="topnav" width="100%" height="100%" align="center">
-<a href="index.html"><font size="5" color="red">Home</font></a>&nbsp;&nbsp; 
-<a href="personalinfo.html"><font size="5" color="red">Personal Info</font></a>&nbsp;
-<a href="contact.html"><font size="5" color="red">Contact</font></a>&nbsp; 
-<a href="links.html"><font size="5" color="red">Links</font></a>
-<a href="picturegallery.html"><font size="5" color="red">Picture Gallery</font></a>&nbsp; 
-<a href="registration.html"><font size="5" color="red">Registration Form</font></a>&nbsp; 
+<body>
+<div class="container-fluid" id="myTopnav">
+<div class="well">
+<img src="images/mg7.jpg" class="img-circle" alt="image not found" width="100" height="100">
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; On the way to becoming computer engineer...<h1>
 </div>
-<pre>
-		
-	<font size="5" color="gray"><mark color="green">Click following headers to go to the specific topics about me<mark></font>
-	
-	<a href="#whoami"><font color="blue" size="4">WHO AM I ?</font></a>
-	
-	<a href="#familytree"><font color="blue" size="4">MY FAMILY TREE</font></a>
-	
-	<a href="#hobbies"><font color="blue" size="4">MY HOBBIES</font></a>
-	
-	<a href="#hometown"><font color="blue" size="4">MY HOMETOWN</font></a>
+<nav class="navbar navbar-inverse">
+  <div  class="container-fluid">
+    <div class="navbar-header m10">
+      <a class="navbar-brand" href="#">Muhammet Gumus</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+		<li class="active"><a href="personalinfo.html"><span class="glyphicon glyphicon-user"></span> Personal Information</a></li>
+       	<li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+        <li><a href="links.html"><span class="glyphicon glyphicon-link"></span> Links</a></li>
+        <li><a href="picturegallery.html"><span class="glyphicon glyphicon-film"></span> Picture Gallery</a></li>
+		<li><a href="registration.html"><span class="glyphicon glyphicon-edit"></span> Registration Form</a></li>        
+  		
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    
+    <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+        <ul class="dropdown-menu">
+        
+          <li><input type="text" name="email" placeholder="Email" required></li>
+          <li><input type="password" name="password" placeholder="Password" required></li>
+          <li><button type="button" class="btn btn-primary ">Login</button></li>
+					
+        </ul>
+      </li>
+      
+      
+    </ul>
+    </div>
+    
+  
+</nav>
+  
+<div class="jumbotron">
 
 
-<h1 id="whoami" align="center"><font color="white"><mark>WHO AM I?</mark></font></h1>
-<font size ="5" color="white">	I'm Muhammet Gumus.I'm 22 years old.I'm from Istanbul and I was born in Istanbul but recently I live in Eskisehir 
+<div class="dropdown">
+  <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Click For Specific Topics About Me
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#whoami">Who Am I ?</a></li>
+    <li><a href="#familytree">My Family Tree</a></li>
+    <li><a href="#hobbies">My Hobbies</a></li>
+    <li><a href="#hometown">My Hometown</a></li>
+  </ul>
+</div>
+
+
+ <center><h2 id="whoami" align="center"><font color="red">WHO AM I?</font></h2><br></center>
+<font size ="5">	I'm Muhammet Gumus.I'm 22 years old.I'm from Istanbul and I was born in Istanbul but recently I live in Eskisehir 
 	because of my education.I have two siblings and I'm the little one.My parents live in Istanbul. 
 	I'm studying Computer Engineering at Anadolu University and this is my second year on my department.I really like 
-	computers so in my opinion i am exactly lucky person because I have been studying department that i love.</font>
+	computers so in my opinion i am exactly lucky person because I have been studying department that i love.</font><br>
 
 
 
@@ -40,71 +88,70 @@
 
 
 
-<h1 id="familytree" align="center"><font color="red"align="center"><mark>MY FAMILY TREE</mark></font></h1>
+<center><h id="familytree" align="center"><font size="5" align="center" color="red">MY FAMILY TREE</font></h2></center>
 
-<center><img src="images/family-tree.png"></center>
-<center><font size="4" color="white"> This schema example describes my own family</font></center>
+<center><img src="images/family-tree.png" class="img-responsive"></center>
+<center><font size="4" > This schema example describes my own family</font></center>
 
-<h1 id="hobbies" align="center"><font color="red" ><mark>MY HOBBIES</mark></font></h1>
-
-	
-	<font size="5" color="lime"><mark>Basketball</mark> = Basketball has really important and indispensable area of my life. 
-		  I really love play basketball and watching matches on the TV. I mean NBA not the other basketball leagues :)</font>
-
-
-
-
-
+<h2 id="hobbies" align="center"><font color="red" >MY HOBBIES</font></h2>
 
 	
-	<font size="5" color="deeppink"><mark> Music </mark>= <em>The another indispensable point of my life is absolutely music. I love discovering and listening new musics from
+	<font size="5"><font color="red" >Basketball</font>  = Basketball has really important and indispensable area of my life. 
+		  I really love play basketball and watching matches on the TV. I mean NBA not the other basketball leagues :)</font><br><br>
+
+
+
+
+
+
+	
+	<font size="5"><font color="red" >Music</font> = The another indispensable point of my life is absolutely music. I love discovering and listening new musics from
 	all around the world and all kinds of them because i believe that every song 
-	has different story behind of them like a every people in this world.</em></font> 
+	has different story behind of them like a every people in this world.</em></font> <br><br>
 
 
 
 
-	<font size="5" color="yellow"><mark>Cinema</mark> = I interested watching the award-winnings films. I really enjoy when i watching them.
-	For example Nolan Brother's films are really amazing for me.Every films are of them has unexpectable end. 
+	<font size="5"><font color="red" >Cinema</font> = I interested watching the award-winnings films. I really enjoy when i watching them.
+	For example Nolan Brother's films are really amazing for me.Every films are of them has unexpectable end.<br><br> 
 
 
 
-<h1 id="hometown" align="center"><font color="red" ><mark>MY HOMETOWN</mark></font></h1>
+<h2 id="hometown" align="center"><font color="red">MY HOMETOWN</font></h2><br>
 
-<font color="white">
      İstanbul is very important place in the world.The city is spread over an area of 7.500 km2 150 km long and 
      50 km wide.Istanbul became the biggest and the most crowded city of Europe.
      Because, ıts location between Asia and Europe, the city always had a great geopolitical importance.the city population is estimate 12 
      to15 millions.Around 2 millions tourists visit İstanbul every year.They are see the historical and natural beauties of the city. 
-     The city has a lots of historical mosque,church and museums of Turkey.</font>
+     The city has a lots of historical mosque,church and museums of Turkey.<br>
 
-				<font size="8" color ="orangered">Most popular places are given below</font>
+				<center><font size="8" color="#3300CC">Most popular places are given below</font><br><center>
 	
-			<font size="5" color="white"><mark>1- Taksim Square</mark> = The large square at the end of the Istıklal street is the Taksim square, 
+			<font size="5" color="red">1- Taksim Square </font>= The large square at the end of the Istıklal street is the Taksim square, 
 			which is one of the most active centers of İstanbul.The square is the most important for Istanbul.
 			There are a lot of different counturies people.There are a lot of big department store 
-			this place is really beatiful.</font>
+			this place is really beatiful.<br>
  
- <center><img src="images/is1.jpg"></center>
+ <center><img src="images/is1.jpg" class="img-responsive"></center><br>
 
 
-			<font size="5" color="white"><mark>2- Bosphorus Bridge</mark> = The project preparations were started in1950.
+		<font color="red">2- Bosphorus Bridge</font> = The project preparations were started in1950.
 			The bridge building started in 1970.It was completed on 29 October 1973.
 			It was built by German and England engineers.Thirty five engineers and four hundred Turkish workers
 			were employed during the construstion.Its cost was $25 millions.The height of the bridge from sea is 64 m.
-			The Bosphorus Bridge carries 200.000 vehicles and 600.000 people a day.</font>
+			The Bosphorus Bridge carries 200.000 vehicles and 600.000 people a day.<br>
 
-	
-<center><img src="images/is2.jpg" width="600" height="400"></center>
 			
-			<font size="5" color="white"><mark>3- Leandros Tower</mark> = The Leandros Tower covers on area of 1250 m2 and was built 200 metres from
+<center><img src="images/is2.jpg" width="600" height="400" class="img-responsive"></center><br>
+			
+			<font color="red">3- Leandros Tower</font>= The Leandros Tower covers on area of 1250 m2 and was built 200 metres from
 			the Usküdar beach.It has got a intelligent history.One day a witch has got apples for the girl and gave 
-			her a poisana us apple, she did after eating it.That is why the tower is called the Leandros Tower
+			her a poisana us apple, she did after eating it.That is why the tower is called the Leandros Tower<br>
 			
 			
-<center><img src="images/is3.jpg" width="600" height="400"></center>
+<center><img src="images/is3.jpg" width="600" height="400" class="img-responsive"></center><br>
 
-			<font size="5" color="white"><mark>4- Dolmabahce Palace</mark> = The Dolmabahçe Palace Museum was built between 1611-1614.It ıs that 14 tens of 
+		<font color="red">	4- Dolmabahce Palace</font> = The Dolmabahçe Palace Museum was built between 1611-1614.It ıs that 14 tens of 
 			gold and 40 tons of silver were used for the decoration ofthe palace.The furniture was bought from Paris, 
 			the vases from Hereke and Lyan , the crytal materials from Bccarant and the the can dlesticks from England 
 			with special order.Almost all of 131 large and 99smal hand-made carpets are silk carpets, and they were 
@@ -113,13 +160,12 @@
 
 			There are 12 gates.There are 285 rooms, 43 holls, 6 balconies, 6 hamams and 1427 windows.
 			In the deconation, 156 clocks,280 vases and 58 candle sticks.By the way, the carpet of 124 m2 is 
-			the second largest hand-made Hereke carpet in Turkey.
+			the second largest hand-made Hereke carpet in Turkey.<br>
  
-<center><img src="images/is4.jpg" width="600" height="400"></center> 
-<center><a href="#myTopnav"> <font color="white"><strong><mark>Click to turn head of the page</mark></strong></font></a></center>
-
-
-</pre>
-
-</body>	
+<center><img src="images/is4.jpg" width="600" height="400" class="img-responsive"></center><br> 
+<center><a href="#myTopnav"> <strong><mark>Click to turn head of the page</mark></strong></a></center
+             
+></div>
+</div>
+</body>
 </html>

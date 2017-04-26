@@ -1,56 +1,187 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+  <title>Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="asd.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+  
 </head>
-<body background="images/rgstr.jpg" width="75%" height="75%">
+<body>
+<div class="container-fluid">
+<div class="well">
+<img src="images/mg7.jpg" class="img-circle" alt="image not found" width="100" height="100">
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; On the way to becoming computer engineer...<h1>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header m10">
+      <a class="navbar-brand" href="#">Muhammet Gumus</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+		<li><a href="personalinfo.html"><span class="glyphicon glyphicon-user"></span> Personal Information</a></li>
+       	<li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+        <li><a href="links.html"><span class="glyphicon glyphicon-link"></span> Links</a></li>
+        <li><a href="picturegallery.html"><span class="glyphicon glyphicon-film"></span> Picture Gallery</a></li>
+		<li class="active"><a href="registration.html"><span class="glyphicon glyphicon-edit"></span> Registration Form</a></li>          
+  		
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    
+    <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+        <ul class="dropdown-menu">
+        
+          <li><input type="text" name="email" placeholder="Email" required></li>
+          <li><input type="password" name="password" placeholder="Password" required></li>
+          <li><button type="button" class="btn btn-primary ">Login</button></li>
+					
+        </ul>
+      </li>
+     </ul>
+    </div>
+   </nav>
+  
+<div class="jumbotron">
+	<form class="form-horizontal" method="post" enctpye="multipart/form-data">
+  <fieldset>
 
-
-<div id="myTopnav" class="topnav" width="100%" height="100%" align="center">
-<a href="index.html"><font size="5" color="red">Home</font></a>&nbsp;&nbsp; 
-<a href="personalinfo.html"><font size="5" color="red">Personal Info</font></a>&nbsp;
-<a href="contact.html"><font size="5" color="red">Contact</font></a>&nbsp; 
-<a href="links.html"><font size="5" color="red">Links</font></a>
-<a href="picturegallery.html"><font size="5" color="red">Picture Gallery</font></a>&nbsp; 
-<a href="registration.html"><font size="5" color="red">Registration Form</font></a>&nbsp; 
+<div class="form-group">
+<label for="name" class="col-lg-2 control-label">Name</label>
+<div class="col-lg-3">
+<input type="text" class="form-control" placeholder="Name"  id="name" required>
+</div>
+</div>
+<div class="form-group">
+<label for="surname" class="col-lg-2 control-label">Surname</label>
+<div class="col-lg-3">
+<input type="text" class="form-control" placeholder="Surname"  id="surname" required>
+</div>
 </div>
 
-<h1><em>Registration Form</em></h1>	
-	
+<div class="form-group">
+<label for="password" class="col-lg-2 control-label">Password</label>
+<div class="col-lg-3">
+<input type="password" class="form-control" placeholder="Password" id="password" required>
+</div>
+</div>
 
-<form method="post">
-Name :&nbsp; &nbsp; &nbsp;&nbsp; <input type="text" placeholder="Enter your name" required><br><br>
-Surname :&nbsp;&nbsp;<input type="text" placeholder="Enter your surname" id="srn" required><br><br>
-Password : <input type="password" required><br><br>  
-Email : &nbsp; &nbsp;&nbsp; &nbsp;<input type="email" required><br><br>  
-Date : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date"><br><br>
-Gender : &nbsp; <input type="radio" name ="gender" value="Male">Male &nbsp; 
-		 <input type="radio" name="gender" id="Female" value="Female">Female<br><br>
+<div class="form-group">
+<label for="email" class="col-lg-2 control-label">Email</label>
+<div class="col-lg-3">
+<input type="email" class="form-control" placeholder="Email"  id="email" required>
+</div>
+</div>
 
-		 City:&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-<select>
-<option checked>Please choose a city </option>
-<option>Istanbul</option>
-<option>Ankara</option>
-<option>Izmır</option>
-<option>Eskisehir</option>
-<option>Other</option>
+
+
+<div class="form-group">
+<label for="birthdate" class="col-lg-2 control-label">Birth Date</label>
+<div class="col-lg-3">
+<input type="date" class="form-control" id="birthdate" required >
+</div>
+</div>
+
+<div class="form-group">
+      <label class="col-lg-2 control-label">Gender</label>
+            <div class="col-lg-3">
+            <div class="radio">
+          <label>
+            <input type="radio" name="genderRadio" id="gender1">
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genderRadio" id="gender2">
+            Female
+          </label>
+        </div>
+		</div>
+        </div>
+        
+     <div class="row">
+<label for="city" class="col-lg-2 control-label">City</label>
+<div class="col-lg-3">
+<select class="form-control" id="city" required>
+ 
+ <option>İstanbul</option>
+ <option>Ankara</option>
+ <option>İzmir</option>
+ <option>Eskişehir</option>
+ <option>Other</option>
 </select>
-<br>
+</div>
+</div><br>
 
-<br>Please select your interests :<br>
-<input type="checkbox" value="Music">Music<br> 
-<input type="checkbox" value="Technology">Technology<br> 
-<input type="checkbox" value="Travel">Travel<br>
-<input type="checkbox" value="Dance">Dance<br><br>
 
-Photo:&nbsp; &nbsp; &nbsp;&nbsp; <input type="file"><br><br>
-Please write something about yourself: <br><br>
-<textarea placeholder="Write here..." rows="5" cols="60"></textarea><br>
-<input type="submit" value="Send" onClick="location.href='thanks.html'">
+        
+     <div class="form-group">
+<label for="inputFile" class="col-lg-2 control-label">Please Select Your Interests</label>   
+       <div class="col-lg-3">
+  <label>
+            <input type="checkbox"> Music
+          </label>
+          <label>
+            <input type="checkbox"> Dance
+          </label>
+          <label>
+            <input type="checkbox"> Travel
+          </label>
+          <label>
+            <input type="checkbox"> Technology
+          </label>
+</div>
+</div> 
+        
+        
+<div class="form-group">
+<label for="photo" class="col-lg-2 control-label">Photo</label>
+<div class="col-lg-3">
+<input type="file" class="form-control" id="photo">
+</div>
+</div>
 
-</form>
+<div class="form-group">
+<label for="inputText" class="col-lg-2 control-label"> Please Write Something About Yourself</label>
+<div class="col-lg-3">
+<textarea class="form-control" rows="3" id="inputText" ></textarea>
+</div>
+</div>
+
+
+
+   
+        
+
+<div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary" onclick="myfunction()
+        " >Submit</button>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+</form>	
+         
+</div>
+
+</div>
+<script language="javascript" type="text/javascript">
+function myfunction() 
+{
+alert('Thank you for registration.You will be redirected to main page');
+    window.location.href = "index.html";
+}
+</script>
+
+
 </body>
 </html>
